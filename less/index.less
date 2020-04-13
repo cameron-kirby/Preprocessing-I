@@ -1,4 +1,20 @@
 // Is this working?
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+//Variables
+// Colors
+@bg-color: #FBFBFB;
+@main-color: #0C486B;
+@accent: #3E6E8A;
+@light-accent: #A2B8C6;
+@dark-accent: #013F64;
+
+//Fonts
+@head-font: 'Merriweather Sans', sans-serif;
+@body-font: 'Merriweather', serif;
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,6 +70,22 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: @body-font;
 }
 
+.container {
+	height: 100vh;
+	display: flex;
+	align-items: stretch;
+}
+
+.sidebar{
+	width: 30%;
+	background-color: @main-color;
+}
+
+.main-content{
+	width: 70%;
+	background-color: @bg-color;
+}
