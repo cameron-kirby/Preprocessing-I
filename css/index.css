@@ -252,11 +252,65 @@ body {
   display: flex;
   align-items: stretch;
 }
+.container img {
+  width: 70%;
+}
 .sidebar {
   width: 30%;
   background-color: #0C486B;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .main-content {
   width: 70%;
   background-color: #FBFBFB;
+}
+header {
+  margin: 10% 10% 5% 10%;
+}
+header h1 {
+  font-size: 3rem;
+  color: #0C486B;
+}
+header h2 {
+  font-size: 1.8rem;
+  color: #3E6E8A;
+}
+header nav {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  color: #0C486B;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 20%;
+  transition: 0.5s;
+}
+header nav a:hover {
+  color: #A2B8C6;
+  transition: 0.5s;
+}
+section {
+  margin: 5% 10%;
+}
+section h3 {
+  font-size: 1.5rem;
+  color: #013F64;
+}
+section p,
+section ul {
+  color: #A2B8C6;
+}
+#skills-contact {
+  display: flex;
+}
+.skills-container,
+.contact-container {
+  width: 45%;
+}
+.contact-container p {
+  line-height: 2;
 }

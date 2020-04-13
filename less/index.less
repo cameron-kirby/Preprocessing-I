@@ -78,14 +78,80 @@ html, body {
 	height: 100vh;
 	display: flex;
 	align-items: stretch;
+
+	img {
+		width: 70%;
+	}
 }
 
 .sidebar{
 	width: 30%;
 	background-color: @main-color;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .main-content{
 	width: 70%;
 	background-color: @bg-color;
+}
+
+header {
+	margin: 10% 10% 5% 10%;
+	h1 {
+		font-size: 3rem;
+		color: @main-color;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		color: @accent;
+	}
+
+	nav {
+		margin: 5% 0;
+		display: flex;
+		justify-content: space-around;
+
+		a {
+			color: @main-color;
+			text-decoration: none;
+			font-size: 1.2rem;
+			width: 20%;
+			transition: 0.5s;
+		}
+		a:hover {
+			color: @light-accent;
+			transition: 0.5s;
+		}
+	}
+}
+
+section {
+	margin: 5% 10%;
+
+	h3 {
+		font-size: 1.5rem;
+		color: @dark-accent;
+
+	}
+
+	p, ul{
+		color: @light-accent;
+	}
+
+}
+
+#skills-contact{
+	display: flex;
+}
+.skills-container, .contact-container {
+	width: 45%;
+}
+
+.contact-container {
+	p {
+		line-height: 2;
+	}
 }
