@@ -262,6 +262,24 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.sidebar nav {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar nav a {
+  text-align: center;
+  color: #A2B8C6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 20%;
+  margin-top: 25%;
+  transition: 0.5s;
+}
+.sidebar nav a:hover {
+  color: #FBFBFB;
+  transition: 0.5s;
+}
 .main-content {
   width: 70%;
   background-color: #FBFBFB;
@@ -277,22 +295,6 @@ header h2 {
   font-size: 1.8rem;
   color: #3E6E8A;
 }
-header nav {
-  margin: 5% 0;
-  display: flex;
-  justify-content: space-around;
-}
-header nav a {
-  color: #0C486B;
-  text-decoration: none;
-  font-size: 1.2rem;
-  width: 20%;
-  transition: 0.5s;
-}
-header nav a:hover {
-  color: #A2B8C6;
-  transition: 0.5s;
-}
 section {
   margin: 5% 10%;
 }
@@ -304,12 +306,41 @@ section p,
 section ul {
   color: #A2B8C6;
 }
+#experience table {
+  margin: 5% 0 0 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+#experience td,
+#experience th {
+  border: 1px solid #3E6E8A;
+  text-align: left;
+  padding: 8px;
+}
+#experience tr:nth-child(even) {
+  background-color: #A2B8C6;
+}
 #skills-contact {
   display: flex;
 }
-.skills-container,
+@media (max-width: 500px) {
+  #skills-contact {
+    flex-direction: column;
+  }
+}
+.skills-container {
+  width: 45%;
+}
+.skills-container ul {
+  line-height: 2;
+}
 .contact-container {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .contact-container {
+    margin-top: 5%;
+  }
 }
 .contact-container p {
   line-height: 2;

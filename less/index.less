@@ -90,6 +90,25 @@ html, body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	nav {
+		margin: 5% 0;
+		display: flex;
+		flex-direction: column;
+
+		a {
+			text-align: center;
+			color: @light-accent;
+			text-decoration: none;
+			font-size: 1.2rem;
+			width: 20%;
+			margin-top: 25%;
+			transition: 0.5s;
+		}
+		a:hover {
+			color: @bg-color;
+			transition: 0.5s;
+		}
+	}
 }
 
 .main-content{
@@ -109,23 +128,6 @@ header {
 		color: @accent;
 	}
 
-	nav {
-		margin: 5% 0;
-		display: flex;
-		justify-content: space-around;
-
-		a {
-			color: @main-color;
-			text-decoration: none;
-			font-size: 1.2rem;
-			width: 20%;
-			transition: 0.5s;
-		}
-		a:hover {
-			color: @light-accent;
-			transition: 0.5s;
-		}
-	}
 }
 
 section {
@@ -143,14 +145,45 @@ section {
 
 }
 
+#experience {
+	
+	table {
+		margin: 5% 0 0 0;
+		border-collapse: collapse;
+		width: 100%;
+	  }
+	  
+	  td, th {
+		border: 1px solid @accent;
+		text-align: left;
+		padding: 8px;
+	  }
+	  
+	  tr:nth-child(even) {
+		background-color: @light-accent;
+	  }
+}
+
+
 #skills-contact{
 	display: flex;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
 }
-.skills-container, .contact-container {
+.skills-container {
 	width: 45%;
+	ul {
+		line-height: 2;
+	}
 }
 
 .contact-container {
+	width: 45%;
+	@media(max-width: 500px) {
+		margin-top: 5%;
+	}
 	p {
 		line-height: 2;
 	}
